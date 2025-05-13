@@ -1,7 +1,20 @@
+body {
+    display: flex; /* Make the body a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    margin: 0; /* Remove default body margin to prevent unwanted spacing */
+}
+
+
+
 #main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+      width: 30%;
+    border: solid rgb(0, 0, 0) 2px;
+    padding: 20px;
 }
 
 label {
@@ -23,7 +36,7 @@ input[type="password"] {
     width: 300px;
 }
 
-#error-message {
+.error-message {
     color: red;
     margin-top: 10px;
 }
